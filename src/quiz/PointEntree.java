@@ -24,8 +24,9 @@ public class PointEntree {
 //        
 //    }
     public static void main(String[] args) {
-        // TODO code application logic here
-
+        
+        Quiz quiz = new Quiz();
+        
         //Afficher menue principal avec while
         boolean quitter = false;
         while (quitter == false) {
@@ -39,7 +40,7 @@ public class PointEntree {
             Scanner scanner = new Scanner(System.in);
             String choix = scanner.nextLine();
             //3.switch
-            Quiz quiz = new Quiz();
+
             switch (choix) {
                 case "1":
                     quiz.creerQuiz();
@@ -56,6 +57,5 @@ public class PointEntree {
             }
         }
     }
-    
 
 }
